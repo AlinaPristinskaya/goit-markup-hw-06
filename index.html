@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw5</title>
+    <title>hw6</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
     
             </nav>
             <address class="address">
-                <ul class="site-nav list">
+                <ul class="site-nav list address-list">
                     <li>
                         <a href="mailto:info@devstudio.com" class="telmail">info@devstudio.com</a>
                     </li>
@@ -35,6 +35,11 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="open-menu-btn">
+                <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
        </div>
         
     </header>
@@ -51,7 +56,7 @@
                 <ul class="list about-content">
                     <li class="about-item">
                         <div class="flex-item">
-                            <svg width="64" height="64">
+                            <svg width="64" height="64" class="about-icons">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
 
@@ -64,7 +69,7 @@
                     </li>
                     <li class="about-item">
                         <div class="flex-item">
-                            <svg width="64" height="64">
+                            <svg width="64" height="64" class="about-icons">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
 
@@ -74,7 +79,7 @@
                     </li>
                     <li class="about-item">
                         <div class="flex-item">
-                            <svg width="64" height="64">
+                            <svg width="64" height="64" class="about-icons">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
 
@@ -84,7 +89,7 @@
                     </li>
                     <li class="about-item">
                         <div class="flex-item">
-                            <svg width="64" height="64">
+                            <svg width="64" height="64" class="about-icons">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
 
@@ -100,10 +105,20 @@
                 <h2 class="headertwo">Our Team</h2>
                 <ul class="list piople-wrap">
                     <li class="card">
-                      <img src="./images/mark.jpg" alt="Mark Guerrero" width="264">
+
+                     
+                      <img
+                      srcset="
+                        ./images/mark.jpg    1x,
+                        ./images/mark2x.jpg 2x
+                      "
+                      src="./images/mark.jpg"
+                      alt="Mark Guerrero" width="264"
+                     
+                    />
                       <div class="card-text">
-                            <h3 class="headerthree">Mark Guerrero</h3>
-                            <p class="text">Product Designer</p>
+                            <h3 class="headername">Mark Guerrero</h3>
+                            <p class="profesion">Product Designer</p>
                            
                       
                       
@@ -146,10 +161,14 @@
                    
                     </li>
                     <li class="card">
-                        <img src="./images/tom.jpg" alt="Tom Ford" width="264">
+                        <img srcset="
+                        ./images/tom.jpg    1x,
+                        ./images/tom2x.jpg 2x
+                      "src="./images/tom.jpg" alt="Tom Ford" width="264">
+                        
                      <div class="card-text">
-                            <h3 class="headerthree">Tom Ford</h3>
-                            <p class="text">Frontend Developer</p>
+                            <h3 class="headername">Tom Ford</h3>
+                            <p class="profesion">Frontend Developer</p>
                             <ul class="socmedia">
                                 <li class="svgicon">
                                     <a href="" class="socmediaicon">
@@ -189,10 +208,13 @@
                  
                     </li>
                     <li class="card">
-                        <img src="./images/camila.jpg" alt="Camila Garcia" width="264">
+                        <img srcset="
+                        ./images/camila.jpg    1x,
+                        ./images/camila2x.jpg 2x" 
+                      src="./images/camila.jpg" alt="Camila Garcia" width="264">
                     <div class="card-text">
-                            <h3 class="headerthree">Camila Garcia</h3>
-                            <p class="text">Marketing</p>
+                            <h3 class="headername">Camila Garcia</h3>
+                            <p class="profesion">Marketing</p>
                             <ul class="socmedia">
                                 <li class="svgicon">
                                     <a href="" class="socmediaicon">
@@ -232,10 +254,14 @@
                     
                     </li>
                     <li class="card">
-                        <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264">
+                        <img 
+                        srcset="
+                        ./images/daniel.jpg    1x,
+                        ./images/daniel2x.jpg 2x"
+                        src="./images/daniel.jpg" alt="Daniel Wilson" width="264">
                     <div class="card-text">
-                            <h3 class="headerthree">Daniel Wilson</h3>
-                            <p class="text">UI Designer</p>
+                            <h3 class="headername">Daniel Wilson</h3>
+                            <p class="profesion">UI Designer</p>
                             <ul class="socmedia">
                                 <li class="svgicon">
                                     <a href="" class="socmediaicon">
@@ -277,7 +303,7 @@
                 </ul>
           </div>
         </section>
-        <section class="section">
+        <!-- <section class="section">
         <div class="container">
                 <h2 class="headertwo">Our Portfolio</h2>
                 <ul class="list example">
@@ -358,9 +384,9 @@
                   </li>
                 </ul>
         </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer section">
+    <!-- <footer class="footer section">
         <div class="container footercontent">
        <div class="textfooter">
                 <a href="./index.html" class="logo firstline">Web<span class="viewfooter">Studio</span></a>
@@ -423,8 +449,8 @@
      
         </div>
 
-    </footer> 
-    <div class="backdrop is-open">
+    </footer>  -->
+    <div class="backdrop">
         <div class="modal">
             <button class="close-btn" type="button">
                 <svg width="8" height="8" class="close">
