@@ -41,11 +41,74 @@
                 </svg>
             </button>
        </div>
+       <div class="mob-menu"> <!--is-open -->
+        <button class="close-btn" type="button">
+            <svg width="8" height="8" class="close">
+                <use href="./images/icons.svg#icon-closep">
+                </use>
+            </svg>
+        </button>
+        <div class="nav-flex">
+            
+            <nav class="nav-mob">
+                <ul class="nav-mob-list">
+                  <li><a class="nav-mob-link" href="./index.html">Studio</a></li>
+                  <li><a class="nav-mob-link "  href="">Portfolio</a></li>
+                  <li><a class="nav-mob-link " href="">Contacts</a></li>
+               </ul>
+           </nav>
+           <address class="mob-adress">
+              <ul class="mob-address-list">
+                 <li>
+                  <a class="mob-adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a class="mob-adress-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+              </ul>
+           </address>
+        </div>
+        <ul class=" mob-socialmedia socmedia">
+            <li class="svgicon">
+                <a href="" class="socmediaicon">
+                    <svg width="16" height="16" class="grey">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+    
+            </li>
+            <li class="svgicon">
+                <a href="" class="socmediaicon">
+                    <svg width="16" height="16" class="grey">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+    
+            </li>
+            <li class="svgicon">
+                <a href="" class="socmediaicon">
+                    <svg width="16" height="16" class="grey">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+    
+            </li>
+            <li class="svgicon">
+                <a href="" class="socmediaicon">
+                    <svg width="16" height="16" class="grey">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+    
+            </li>
+    
+        </ul>
+      </div>
         
     </header>
     <main>
         <section class="order">
-          <div class="container order-content">
+          <div class="container ">
                 <h1 class="accentpage">Effective Solutions for Your Business</h1>
                 <button type="button" class="button">Order Service</button>
          </div>
@@ -303,90 +366,127 @@
                 </ul>
           </div>
         </section>
-        <!-- <section class="section">
+        <section class="section">
         <div class="container">
                 <h2 class="headertwo">Our Portfolio</h2>
                 <ul class="list example">
                   <li class="example-card">
                        <div class="card-overlay">
                            
-                             <img src="./images/bankin.jpg" alt="bankin" width="360">
+                        <picture>
+                            <source srcset="./images/bankinmob1x.jpg 1x, ./images/bankinmob2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/bankin-tab1x.jpg 1x, ./images/bankin-tab2x.jpg 2x" media="(min-width: 768px)">
+                            <source 
+                            media="(min-width: 1158px)">
+                          <img src="./images/bankin-tab1x.jpg" alt="Banking App" width="360">
+                         </picture>
                              <p class="overlay-description">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                            
                         </div>
                         <div class="example-card-text">
-                          <h3 class="headerthree">Banking App</h3>
-                          <p class="text">App</p>
+                          <h3 class="example-header">Banking App</h3>
+                          <p class="example-text">App</p>
                         </div>
                   </li>
                   <li class="example-card">
                     <div class="card-overlay">
                            
-                        <img src="./images/Payment.jpg" alt="Cashless Payment" width="360">
+                        <picture>
+                            <source srcset="./images/payment-mob1.jpg 1x, ./images/payment-mob2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/payment-tab1x.jpg 1x, ./images/payment-tab2x.jpg 2x" media="(min-width: 768px)">
+                            <source 
+                            media="(min-width: 1158px)">
+                            <img src="./images/payment-tab1x.jpg" alt="Cashless Payment" width="360">
+                        </picture>
                         <p class="overlay-description">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                       
                    </div>
                     <div class="example-card-text">
-                        <h3 class="headerthree">Cashless Payment</h3>
-                        <p class="text">Marketing</p>
+                        <h3 class="example-header">Cashless Payment</h3>
+                        <p class="example-text">Marketing</p>
                     </div>
                   </li>
                   <li class="example-card">
                     <div class="card-overlay">
                            
-                        <img src="./images/Meditation.jpg" alt="Meditation App" width="360">
+                        <picture>
+                            <source srcset="./images/Meditation-mob1x.jpg 1x, ./images/Meditation-mob2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/Meditation-tab1x.jpg 1x, ./images/Meditation-tab2x.jpg 2x" media="(min-width: 768px)">
+                            <source 
+                            media="(min-width: 1158px)">
+                            <img src="./images/Meditation-tab1x.jpg" alt="Meditation App" width="360">
+                        </picture>
                         <p class="overlay-description">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                       
                    </div>
                     
                     <div class="example-card-text">
-                        <h3 class="headerthree">Meditation App</h3>
-                        <p class="text">App</p>
+                        <h3 class="example-header">Meditation App</h3>
+                        <p class="example-text">App</p>
                     </div>
                   </li>
-                  <li class="example-card"> <div class="card-overlay">
+                  <li class="example-card">
+             <div class="card-overlay">
                            
-                    <img src="./images/Taxi.jpg" alt="Taxi Service" width="360">
+                    <picture>
+                        <source srcset="./images/taxi-mob1x.jpg 1x, ./images/taxi-mob2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/taxi-tab1x.jpg 1x, ./images/taxi-tab2x.jpg 2x" media="(min-width: 768px)">
+                            <source 
+                            media="(min-width: 1158px)">
+                        <img src="./images/taxi-tab1x.jpg" alt="Taxi Service" width="360">
+                    </picture>
                     <p class="overlay-description">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                   
                </div>
                     
                     <div class="example-card-text">
-                        <h3 class="headerthree">Taxi Service</h3>
-                        <p class="text">Marketing</p>
+                        <h3 class="example-header">Taxi Service</h3>
+                        <p class="example-text">Marketing</p>
                     </div>
                   </li>
                   <li class="example-card">
                     <div class="card-overlay">
                            
-                        <img src="./images/Screen.jpg" alt="Screen Illustrations" width="360">
+                        <picture>
+                            <source srcset="./images/screen-mob1x.jpg 1x, ./images/screen-mob2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/screen-tab1x.jpg 1x, ./images/screen-tab2x.jpg 2x" media="(min-width: 768px)">
+                            <source 
+                            media="(min-width: 1158px)">
+                            <img src="./images/screen-tab1x.jpg" alt="Screen Illustrations" width="360">
+                        </picture>
                         <p class="overlay-description">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                       
                    </div>
                     
                <div class="example-card-text">
-                        <h3 class="headerthree">Screen Illustrations</h3>
-                        <p class="text">Design</p>
+                        <h3 class="example-header">Screen Illustrations</h3>
+                        <p class="example-text">Design</p>
                </div>
                   </li>
                   <li class="example-card">
                     <div class="card-overlay">
                            
-                        <img src="./images/Course.jpg" alt="Online Courses" width="360">
+                        <picture>
+                            <source srcset="./images/course-mob1x.jpg 1x, ./images/course-mob2x.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/course-tab1x.jpg 1x, ./images/course-tab2x.jpg 2x" media="(min-width: 768px)">
+                            <source 
+                            media="(min-width: 1158px)">
+                            <img src="./images/course-tab1x.jpg" alt="Online Courses" width="360">
+                        </picture>
                         <p class="overlay-description">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                       
                    </div>
                     
                     <div class="example-card-text">
-                        <h3 class="headerthree">Online Courses</h3>
-                        <p class="text">Marketing</p>
+                        <h3 class="example-header">Online Courses</h3>
+                        <p class="example-text">Marketing</p>
                     </div>
                   </li>
                 </ul>
         </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer section">
+    <footer class="footer section">
         <div class="container footercontent">
        <div class="textfooter">
                 <a href="./index.html" class="logo firstline">Web<span class="viewfooter">Studio</span></a>
@@ -437,7 +537,7 @@
        <div class="footer-subscribe">
         <p class="subtitle">Subscribe</p>
         <form class="footer-form">
-            <label class="modal-label" >
+            <label class="modal-label footer-label" >
             <input type="email" placeholder="E-mail" name="user-subscribe" class="footer-form-input"></label>
             <button type="submit" class="button footer-btn">Subscribe
                 <svg width="24" height="24" class="frame">
@@ -449,7 +549,7 @@
      
         </div>
 
-    </footer>  -->
+    </footer> 
     <div class="backdrop">
         <div class="modal">
             <button class="close-btn" type="button">
@@ -524,8 +624,10 @@
                           <use href="./images/icons.svg#icon-Vector"></use>
                         </svg></span>
                       
-                      I accept the terms and conditions of the   <a href="" class="agreed"> Privacy Policy</a></label
-                    >
+                     <span class="modal-text-span">
+                          I accept the terms and conditions of the   <a href="" class="agreed"> Privacy Policy</a></label
+                        >
+                     </span>
                   </div>
 
                   <button type="submit" class="button">Send</button>
